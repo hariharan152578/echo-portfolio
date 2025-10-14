@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@keyframes scroll-up-once {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-480rem);
+  }
+  100% {
+    transform: translateY(-480rem);
+  }
+}
+
+.animate-scroll-up-once {
+  animation: scroll-up-once 45s ease-in-out forwards;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scroll-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;  /* IE, Edge */
+  scrollbar-width: none;  /* Firefox */
+}
