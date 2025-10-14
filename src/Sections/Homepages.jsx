@@ -32,7 +32,7 @@ const Homepages = () => {
         </div>
 
         {/* Info Highlights Section */}
-        <div className="flex flex-col md:flex-row justify-around items-center bg-white py-6 gap-6 md:gap-0 shadow-sm z-20 -mt-10 relative  mb-5">
+        <div className="flex flex-col md:flex-row justify-around items-center bg-white py-6 gap-6 md:gap-0 shadow-sm z-20 -mt-10   mb-5">
           {[
             "Turning Ideas Into Digital Success",
             "Innovative Solutions for a Digital World",

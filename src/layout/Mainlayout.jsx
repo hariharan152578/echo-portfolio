@@ -9,7 +9,7 @@ import Package from '../Sections/Package'
 import Homepages from '../Sections/Homepages'
 import Footer from '../components/Footer'
 import Contact from '../Sections/Contact'
-
+import uparrow from '../assets/icon/arrow-up.svg'
 const Mainlayout = () => {
   const [loading, setLoading] = useState(true)
 
@@ -41,6 +41,13 @@ const Mainlayout = () => {
         <section id="packages"><Package /></section>
         <section id="contact"><Contact/></section>
       </main>
+     <div
+  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+  className="fixed bottom-5 right-5 bg-[#b39de6] rounded-full shadow-lg z-10 cursor-pointer hover:bg-gray-100 transition"
+>
+  <img src={uparrow} className="p-2 w-10 h-10" alt="Go to top" />
+</div>
+
       <Footer/>
     </div>
   )
