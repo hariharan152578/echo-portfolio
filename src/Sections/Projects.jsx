@@ -1,5 +1,5 @@
 import React from 'react'
-import greens from "../assets/img/greens.png"
+import greens from "../assets/img/Greens.png"
 import travel from "../assets/img/Travel.png"
 import MRM from "../assets/img/MRMPG.png"
 import travelling from "../assets/img/Travelling.png"
