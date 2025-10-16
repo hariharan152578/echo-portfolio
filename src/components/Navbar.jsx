@@ -293,7 +293,7 @@ const Navbar = () => {
 
           {/* Other Links */}
           {[
-            { id: 'about', label: 'About Us' },
+            { id: 'home', label: 'About Us' },
             { id: 'portfolio', label: 'Portfolio' },
             { id: 'testimonials', label: 'Testimonials' },
             { id: 'packages', label: 'Packages' },
@@ -352,7 +352,7 @@ const Navbar = () => {
             </div>
 
             {[
-              { id: 'about', label: 'About Us' },
+              { id: 'home', label: 'About Us' },
               { id: 'portfolio', label: 'Portfolio' },
               { id: 'testimonials', label: 'Testimonials' },
               { id: 'packages', label: 'Packages' },
