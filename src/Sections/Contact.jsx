@@ -59,7 +59,7 @@ const Contact = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-5 py-3 border-0 rounded-xl placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="w-full px-5 py-3 border-0 rounded-xl placeholder-gray-400 focus:outline-none "
               placeholder="Enter your email"
               required
             />
