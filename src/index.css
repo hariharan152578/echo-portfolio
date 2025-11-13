@@ -28,3 +28,33 @@
   -ms-overflow-style: none;  /* IE, Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* Three.js canvas styles */
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for testimonials */
+.scroll-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Backdrop blur support */
+@supports (backdrop-filter: blur(10px)) {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+}
