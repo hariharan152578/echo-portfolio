@@ -732,9 +732,9 @@ const X = {
     clearcoat: 1,
     clearcoatRoughness: 0.15,
   },
-  minSize: 0.5,
-  maxSize: 1,
-  size0: 1,
+  minSize: 0.25,
+  maxSize: 0.5,
+  size0: 0.5,
   gravity: 0.5,
   friction: 0.9975,
   wallBounce: 0.95,
@@ -918,7 +918,7 @@ const Ballpit = ({ className = '', followCursor = true, ...props }) => {
 // --- HOMEPAGES COMPONENT (Main export) ---
 const Homepages = () => {
   // const homepageContainerRef = useRef(null); // No longer needed for Ballpit
-  const [ballCount, setBallCount] = useState(window.innerWidth < 768 ? 100 : 220);
+  const [ballCount, setBallCount] = useState(window.innerWidth < 768 ? 100 : 400);
 
   useEffect(() => {
     const handleResize = () => {
@@ -938,6 +938,13 @@ const Homepages = () => {
     // Cleanup
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+            const handleGetStartedClick = () => {
+              const packagesSection = document.getElementById('packages');
+              if (packagesSection) {
+                packagesSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            };
+            
   return (
     <>
        <div className="flex  flex-col relative overflow-hidden -mt-25 md:-mt-20" >
@@ -977,14 +984,15 @@ const Homepages = () => {
               We help businesses like yours earn more customers, stand out from competitors,
               and make more money.
             </p>
-            <button className="bg-[#20b15a] text-white px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300 text-sm md:text-base font-semibold mb-5 md:mb-0">
+            <button onClick={handleGetStartedClick}
+            className="bg-[#20b15a] text-white px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300 text-sm md:text-base font-semibold mb-5 md:mb-0">
               Get Started
             </button>
           </div>
 
           {/* Right Spacer Section (image is in the background) */}
           <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0 relative z-20">
-            <div className="relative w-full max-w-[650px] h-[400px] md:h-[600px] pointer-events-none">
+            <div className="relative w-[650px] max-w-[650px] h-[300px] md:h-[500px] pointer-events-none">
               {/* This is just a spacer; the image is in the z-10 layer */}
             </div>
           </div>

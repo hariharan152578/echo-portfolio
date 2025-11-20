@@ -14,7 +14,7 @@ import Servies from '../Sections/Servies'
 import Count from '../Sections/Count'
 import Projects from '../Sections/Projects'
 import Testimonials from '../Sections/Testimonials'
-import Package from '../Sections/Package'
+import Package from '../sections/Package'
 import Contact from '../Sections/Contact'
 
 gsap.registerPlugin(ScrollTrigger)

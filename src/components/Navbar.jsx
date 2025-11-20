@@ -76,7 +76,7 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center space-x-10 text-black mr-5">
         {/* Services Dropdown */}
-        <div className="relative flex items-center cursor-pointer services-dropdown">
+        {/* <div className="relative flex items-center cursor-pointer services-dropdown">
           <span
             onClick={() => setIsServiceOpen(!isServiceOpen)}
             className="flex items-center gap-1 text-gray-700 font-semibold select-none hover:text-blue-700 transition-colors"
@@ -111,7 +111,7 @@ const Navbar = () => {
               </button>
             </div>
           )}
-        </div>
+        </div> */}
 
         {/* Other Links */}
         {[
@@ -143,50 +143,10 @@ const Navbar = () => {
 
         <div className="flex flex-col space-y-1 p-4 text-gray-800 font-semibold">
           {/* Mobile Services Dropdown */}
-          <div className="flex flex-col">
-            <button
-              onClick={() => setIsMobileServiceOpen(!isMobileServiceOpen)}
-              className="flex items-center justify-between py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors"
-            >
-              <span>Services</span>
-              <img
-                src={isMobileServiceOpen ? serviceiconclose : serviceiconopen}
-                alt="toggle"
-                className="w-4 h-4 transition-transform"
-              />
-            </button>
-
-            <div
-              className={`overflow-hidden transition-all duration-300 ${
-                isMobileServiceOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
-              }`}
-            >
-              <div className="flex flex-col pl-6 space-y-1 py-2">
-                <button 
-                  onClick={() => scrollToSection('web-dev')}
-                  className="text-sm text-gray-600 hover:text-blue-700 py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors text-left"
-                >
-                  Web Development
-                </button>
-                <button 
-                  onClick={() => scrollToSection('app-dev')}
-                  className="text-sm text-gray-600 hover:text-blue-700 py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors text-left"
-                >
-                  App Development
-                </button>
-                <button 
-                  onClick={() => scrollToSection('ui-ux')}
-                  className="text-sm text-gray-600 hover:text-blue-700 py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors text-left"
-                >
-                  UI/UX Design
-                </button>
-              </div>
-            </div>
-          </div>
-
+         
           {/* Other Mobile Links */}
           {[
-            { id: 'home', label: 'About Us' },
+            { id: 'home', label: 'Services' },
             { id: 'portfolio', label: 'Portfolio' },
             { id: 'testimonials', label: 'Testimonials' },
             { id: 'packages', label: 'Packages' },

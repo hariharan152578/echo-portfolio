@@ -123,14 +123,14 @@ const Contact = () => {
     // Parent container is relative
     <div className="relative overflow-hidden bg-white">
 
-      {/* Squares Background */}
+      {/* Squares Background
       <div className="absolute inset-0 w-full h-full">
         <Squares
           speed={0.5}
           squareSize={100}
           direction='diagonal'
         />
-      </div>
+      </div> */}
 
       {/* Content Wrapper is relative to stack on top */}
       <div className="relative py-16 px-6 md:px-20">
